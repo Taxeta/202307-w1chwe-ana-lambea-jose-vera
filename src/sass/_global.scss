@@ -1,0 +1,41 @@
+@use "font";
+@use "variables";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: font.$font-family-text;
+  color: variables.$color-text;
+}
+
+body {
+  font-size: 1 rem;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+input,
+button {
+  font: inherit;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: font.$font-family-header;
+}
