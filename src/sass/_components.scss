@@ -84,3 +84,105 @@
     }
   }
 }
+
+.welcome-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  gap: 60px;
+  background-color: #ffffff;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 40px;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16.59px;
+    font-family: font.$font-family-text;
+    text-transform: uppercase;
+    color: variables.$color-text-light;
+    gap: 12px;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 14px;
+    font-family: font.$font-family-header;
+    line-height: 18.66px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid variables.$color-text;
+
+    &--number::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    font-family: font.$font-family-header;
+    color: #fff;
+    padding: 40px 20px;
+    gap: 12px;
+    font-size: 36px;
+    background-color: variables.$color-primary;
+    border-radius: 0 0 16px 16px;
+  }
+
+  @media screen and (min-width: variables.$breaking-point) {
+    display: flex;
+    flex-direction: row;
+    min-width: 90%;
+    max-width: 100%;
+    padding-left: 0px;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 20px 20px 0;
+
+    &__container {
+      flex-direction: row;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    &__label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
+      gap: 40px;
+    }
+
+    &__button {
+      min-width: 128px;
+      max-width: 170px;
+      padding: 60px 20px;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}
+
+.card-popular-city {
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  margin: 0;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+  }
+}
