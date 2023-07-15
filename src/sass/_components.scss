@@ -33,3 +33,67 @@
     }
   }
 }
+
+.welcome-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 16px;
+  border-radius: 16px;
+  gap: 60px;
+
+  background-color: #ffffff;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  &__label {
+    font-size: 14px;
+    line-height: 16.59px;
+    font-family: font.$font-family-header;
+  }
+  &__input {
+    width: 200px;
+    font-size: 14px;
+    font-family: font.$font-family-text;
+    line-height: 18.66px;
+    border-bottom: 1px solid variables.$color-text;
+  }
+  &__button {
+    display: flex;
+    padding: 40px 20px;
+    justify-items: center;
+    gap: 12px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: variables.$breaking-point) {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-left: 0px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 0 16px 16px 0;
+
+    &__label {
+      display: flex;
+      flex-direction: column;
+    }
+    &__input {
+      gap: 40px;
+    }
+    &__button {
+      display: flex;
+      flex-grow: 66%;
+      gap: 100px;
+    }
+  }
+}
