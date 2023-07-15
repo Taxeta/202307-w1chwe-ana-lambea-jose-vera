@@ -1,5 +1,56 @@
-@use "font";
 @use "variables";
+@use "font";
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    padding-bottom: 15px;
+    font-size: 40px;
+    border-bottom: 3px solid variables.$color-primary;
+  }
+
+  &__text {
+    color: variables.$color-text-light;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: variables.$breaking-point) {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 60px;
+
+    &__title {
+      font-size: 64px;
+    }
+
+    &__text {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+}
+
+.button-movement {
+  width: 66px;
+  height: 60px;
+  border-radius: 12px;
+  gap: 4px;
+  background-image: url("../vectors/arrow_next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__previous {
+    background-color: variables.$color-secondary;
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    background-color: variables.$color-primary;
+  }
+}
 
 .welcome-titles {
   display: flex;
