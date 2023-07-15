@@ -15,6 +15,14 @@
   padding: 60px;
 }
 
+.main-container {
+  padding: 16px;
+}
+.welcome-container {
+  padding: 64px 0px;
+  background-color: rgb(49, 108, 175);
+}
+
 @media screen and (min-width: variables.$breaking-point) {
   .section-container {
     padding: 20px;
@@ -22,5 +30,9 @@
 
   .button-movement-container {
     padding: 0;
+  }
+
+  .main-container {
+    padding: 20px;
   }
 }
