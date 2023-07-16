@@ -1,0 +1,20 @@
+@use "../variables";
+
+.button-movement {
+  width: 66px;
+  height: 60px;
+  border-radius: 12px;
+  gap: 4px;
+  background-image: url("../vectors/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__previous {
+    background-color: variables.$color-secondary;
+    transform: rotate(180deg);
+  }
+
+  &__next {
+    background-color: variables.$color-primary;
+  }
+}

@@ -53,6 +53,7 @@
     min-height: 100vh;
     gap: 100px;
     padding: 100px 20px;
+    margin: -20px;
   }
 
   .card-list-container {
@@ -62,5 +63,15 @@
     flex-wrap: wrap;
     grid-template-columns: repeat(1fr, 3);
     gap: 32px;
+  }
+}
+
+.card-list-container > li:not(:first-child) {
+  display: none;
+}
+
+@media screen and (min-width: variables.$breaking-point) {
+  .card-list-container > li:not(:first-child) {
+    display: flex;
   }
 }

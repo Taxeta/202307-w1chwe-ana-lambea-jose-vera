@@ -1,3 +1,7 @@
 @use "global";
-@use "components";
 @use "containers";
+@use "./components/welcome-titles";
+@use "./components/welcome-form";
+@use "./components/section-header";
+@use "./components/button_movement";
+@use "./components/card-popular-city";
