@@ -228,3 +228,13 @@
     }
   }
 }
+
+.card-list-container > li:not(:first-child) {
+  display: none;
+}
+
+@media screen and (min-width: variables.$breaking-point) {
+  .card-list-container > li:not(:first-child) {
+    display: flex;
+  }
+}
