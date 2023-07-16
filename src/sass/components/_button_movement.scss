@@ -14,7 +14,15 @@
     transform: rotate(180deg);
   }
 
+  &__previous:hover {
+    background-color: variables.$color-secondary-light;
+  }
+
   &__next {
     background-color: variables.$color-primary;
+  }
+
+  &__next:hover {
+    background-color: variables.$color-primary-light;
   }
 }
