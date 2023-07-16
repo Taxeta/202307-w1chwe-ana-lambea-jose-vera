@@ -9,16 +9,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-
   <title>Travellian</title>
 </head>
 
 <body>
+  <header class="navigation-bar">
+    <a class="navigation-bar__link-logo" href="index.html" title="Home page">
+      <img class="navigation-bar__svg-logo" src="vectors/logo.svg" alt="Travellian logo">
+    </a>
+    <span class="navigation-bar__burguer-menu"></span>
+    <nav class="navigation-bar__nav">
+      <ul class="navigation-bar__list">
+        <li><a class="navigation-bar__link navigation-bar__link--active" href="index.html">Home</a></li>
+        <li><a class="navigation-bar__link" href="explore.html">Explore</a></li>
+        <li><a class="navigation-bar__link" href="travel.html">Travel</a></li>
+        <li><a class="navigation-bar__link" href="blog.html">Blog</a></li>
+        <li><a class="navigation-bar__link" href="pricing.html">Pricing</a></li>
+      </ul>
+    </nav>
+    <div class="account-buttons-container">
+      <a class="navigation-bar__link" href="">Login</a>
+      <a class="button-action" href="">Sign up</a>
+    </div>
+  </header>
   <main class="main-container">
     <section class="welcome-container">
       <div class="welcome-titles">
         <span class="welcome-titles__title">Start your unforgettable journey with us.</span>
-        <span class="welcome-titles__subtitles">The best travel for your jorney begins now.</span>
+        <span class="welcome-titles__subtitle">The best travel for your jorney begins now.</span>
       </div>
       <form class="welcome-form">
         <div class="welcome-form__container">

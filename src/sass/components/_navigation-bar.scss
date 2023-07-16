@@ -1,0 +1,60 @@
+@use "../variables";
+@use "../font";
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16 * 2px;
+
+  &__svg-logo {
+    align-self: flex-start;
+    height: 27.52px;
+  }
+
+  &__burguer-menu {
+    content: url("../vectors/hamburger.svg");
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  @media screen and (min-width: variables.$breaking-point) {
+    padding: 32px;
+
+    &__svg-logo {
+      height: 45.61px;
+    }
+
+    &__burguer-menu {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      font-family: inherit;
+      color: #fff;
+    }
+
+    &__link {
+      display: flex;
+      font-size: 20px;
+      color: #fff;
+      &--active {
+        border-bottom: 3px solid variables.$color-primary;
+      }
+    }
+  }
+}
